@@ -1,0 +1,17 @@
+//Faça um algoritmo que leia um número inteiro e mostre o seu sucessor e antecessor.
+
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	fmt.Print("Informe um número inteiro: ")
+	fmt.Scan(&n1)
+
+	sucessor := n1 + 1
+	antecessor := n1 - 1
+
+	fmt.Println("O antecessor do número é: ", antecessor)
+	fmt.Print("O sucessor do número é: ", sucessor)
+}
