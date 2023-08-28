@@ -1,0 +1,19 @@
+//Faça um algoritmo que leia três números inteiros e mostre o menor deles.
+
+package main
+
+import "fmt"
+
+func main() {
+	var n1, n2 int
+	fmt.Print("Infome um número: ")
+	fmt.Scan(&n1)
+	fmt.Print("Informe outro número: ")
+	fmt.Scan(&n2)
+
+	if n1 > n2 {
+		fmt.Print("O menor número é ", n2)
+	} else {
+		fmt.Print("O menor número é ", n1)
+	}
+}
