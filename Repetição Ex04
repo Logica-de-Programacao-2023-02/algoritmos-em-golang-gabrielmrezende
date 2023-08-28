@@ -1,0 +1,32 @@
+package main
+
+import "fmt"
+
+func main() {
+	var peso, altura float64
+	fmt.Print("Informe seu peso: ")
+	fmt.Scan(&peso)
+	fmt.Print("Informe sua altura: ")
+	fmt.Scan(&altura)
+
+	IMC := peso / (altura * altura)
+
+	if IMC < 18.5 {
+		fmt.Print("Abaixo do peso Ideal")
+	}
+	if IMC >= 18.5 && IMC <= 24.9 {
+		fmt.Print("Peso normal")
+	}
+	if IMC >= 25 && IMC <= 29.9 {
+		fmt.Print("Pré-Obesidade")
+	}
+	if IMC >= 30 && IMC <= 34.9 {
+		fmt.Print("Obesidade grau 1")
+	}
+	if IMC >= 35 && IMC <= 39.9 {
+		fmt.Print("Obesidade grau 2")
+	}
+	if IMC >= 40 {
+		fmt.Print("Obesidade grau 3")
+	}
+}
