@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var salario float64
+	fmt.Print("Informe o salário do funcionário: ")
+	fmt.Scan(&salario)
+
+	sal10 := salario + (salario * 1 / 10)
+	sal5 := salario + (salario * 0.05)
+	
+  if salario < 1000 {
+		fmt.Print("O novo salário do funcionário será de: ", sal10)
+	}
+	if salario >= 1000 {
+		fmt.Print("O novo salário do funcionário será de: ", sal5)
+	}
+}
