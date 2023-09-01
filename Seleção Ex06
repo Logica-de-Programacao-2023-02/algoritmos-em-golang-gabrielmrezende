@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1, n2 int
+	fmt.Print("Digite um número inteiro: ")
+	fmt.Scan(&n1)
+	fmt.Print("Informe outro número inteiro: ")
+	fmt.Scan(&n2)
+
+	soma := n1 + n2
+	multi := n1 * n2
+
+	if n1 > 0 && n2 > 0 {
+		fmt.Print("A multiplicação dos números será de: ", multi)
+	}
+	if n2 > 0 && n1 < 0 {
+		fmt.Print("O soma entre os número é de: ", soma)
+	}
+	if n2 < 0 && n1 > 0 {
+		fmt.Print("A soma entre os número é de: ", soma)
+	}
+}
