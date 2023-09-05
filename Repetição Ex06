@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	
+	fmt.Print("Digite um numero: ")
+	fmt.Scan(&x)
+	fmt.Println(x * 1)
+	fmt.Println(x * 2)
+	fmt.Println(x * 3)
+	fmt.Println(x * 4)
+	fmt.Println(x * 5)
+	fmt.Println(x * 6)
+	fmt.Println(x * 7)
+	fmt.Println(x * 8)
+	fmt.Println(x * 9)
+	fmt.Println(x * 10)
+}
