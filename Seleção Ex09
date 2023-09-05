@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num1, num2, num3 float64
+	fmt.Print("Informe um número inteiro: ")
+	fmt.Scan(&num1)
+
+	fmt.Print("Informe outro número inteiro: ")
+	fmt.Scan(&num2)
+
+	fmt.Print("Informe outro número inteiro: ")
+	fmt.Scan(&num3)
+
+	if num1 < num2 && num2 < num3 {
+		fmt.Print("Em ordem crescente: ", num1, num2, num3)
+	} else if num1 < num3 && num3 < num2 {
+		fmt.Print("Em ordem crescente: ", num1, num3, num2)
+	} else if num2 < num1 && num1 < num3 {
+		fmt.Print("Em ordem crescente: ", num2, num1, num3)
+	} else if num2 < num3 && num3 < num1 {
+		fmt.Print("Em ordem crescente: ", num2, num3, num1)
+	} else if num3 < num1 && num1 < num2 {
+		fmt.Print("Em ordem crescente: ", num3, num1, num2)
+	} else if num3 < num2 && num2 < num1 {
+		fmt.Print("Em ordem crescente: ", num3, num2, num1)
+	} else {
+		fmt.Print("Error")
+	}
+}
